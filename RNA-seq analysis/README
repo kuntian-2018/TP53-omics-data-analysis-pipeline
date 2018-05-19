@@ -1,7 +1,8 @@
 Introduction
 ============
-All the original reads files generated from Illumina HiSeq2500 were stored in the foramt of FASTQ.
-FASTQ files were downloaded from the EGA by the client and deencypted.
+All the original reads files generated from Illumina HiSeq2500 were stored in the foramt of FASTQ. 
+Each sample are paired-end sequenced with average of 60 million reads. A couple of FASTQ files are correspond to a patient sample. The length of reads are 75 bp. 
+FASTQ files were downloaded from the EGA by the client and deencypted. We analyzed 71 samples in toal: 26 out of them are 53 wild-type untreated, 27 out of them are p53 wild-type treated samples, 17 samples are p53 mutant treated and 1 sample are p53 mutant treated samples.
 Then these files were mapped by the TopHat2 software via the command line programm on the Unix client.
 Here is an example of the TopHat2 command:
 tophat2 -p 10 /home/kun/bowtie/tophat-2.1.1.Linux_x86_64/test_data2/Homo_sapiens/Ensembl/GRCh37/Sequence/Bowtie2Index/genome _EGAR00001406176_ega_meso_rna_9259750_1_1.gne.fastq _EGAR00001406176_ega_meso_rna_9259750_1_2.gne.fastq
