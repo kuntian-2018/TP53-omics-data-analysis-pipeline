@@ -1,4 +1,5 @@
 Introduction
+============
 All the original reads files generated from Illumina HiSeq2500 were stored in the foramt of FASTQ.
 FASTQ files were downloaded from the EGA by the client and deencypted.
 Then these files were mapped by the TopHat2 software via the command line programm on the Unix client.
