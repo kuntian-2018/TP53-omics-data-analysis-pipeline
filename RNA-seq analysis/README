@@ -1,0 +1,9 @@
+Introduction
+All the original reads files generated from Illumina HiSeq2500 were stored in the foramt of FASTQ.
+FASTQ files were downloaded from the EGA by the client and deencypted.
+Then these files were mapped by the TopHat2 software via the command line programm on the Unix client.
+Here is an example of the TopHat2 command:
+tophat2 -p 10 /home/kun/bowtie/tophat-2.1.1.Linux_x86_64/test_data2/Homo_sapiens/Ensembl/GRCh37/Sequence/Bowtie2Index/genome _EGAR00001406176_ega_meso_rna_9259750_1_1.gne.fastq _EGAR00001406176_ega_meso_rna_9259750_1_2.gne.fastq
+There are 10 threads of the core utilized for the alignment work by TopHat2 and the reference is Homo_sapiens.GRCh37.63.gtf.
+BAM file was generated for the alignment and processed by R scripts to export the count matrix for the differential expression analysis and the count matrix based statistical analysis.
+All the R scripts for the differential expression analysis and the count matrix based statistical analysis, were pushed in this folder.  
