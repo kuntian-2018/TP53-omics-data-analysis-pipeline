@@ -12,5 +12,7 @@ All the R scripts for the differential expression analysis and the count matrix 
 
 
 R script to generate the count matrix for each patient group
+As each BAM file with GB size is too big to be processed in the local computer, we process them on the core facility server to produce the count matrix at a MB size.
+The count matrix will facilitate the gene level analysis to identify the differentially expressed genes and the further statistic analysis.
 All bam files are grouped by the p53 status, and stored in the folders of the  Unix server.
 The r script "getCountMatrix.R" is executed on the sever with nohup command to produce count matrix for each patient group, such as the p53 wild type untreated group, p53 wild type treated group, the p53 mutant untreated group and the p53 mutant treated group.
