@@ -9,3 +9,8 @@ tophat2 -p 10 /home/kun/bowtie/tophat-2.1.1.Linux_x86_64/test_data2/Homo_sapiens
 There are 10 threads of the core utilized for the alignment work by TopHat2 and the reference is Homo_sapiens.GRCh37.63.gtf.
 BAM file was generated for the alignment and processed by R scripts to export the count matrix for the differential expression analysis and the count matrix based statistical analysis.
 All the R scripts for the differential expression analysis and the count matrix based statistical analysis, were pushed in this folder.  
+
+
+R script to generate the count matrix for each patient group
+All bam files are grouped by the p53 status, and stored in the folders of the  Unix server.
+The r script "getCountMatrix.R" is executed on the sever with nohup command to produce count matrix for each patient group, such as the p53 wild type untreated group, p53 wild type treated group, the p53 mutant untreated group and the p53 mutant treated group.
