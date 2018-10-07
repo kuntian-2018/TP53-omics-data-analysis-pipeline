@@ -9,8 +9,8 @@ The scond part of this script is to plot venn diagram to integrate the overlap o
 The input are gene list detected up-regulated or down-regulated in the etop treated or gem treated samples.
 The output is the venn diagram ploted.
 
-STSFA input preparation
-The Third script is to translate the expression values of each sample to the STSFA microarray input for the simulation.
+STSFA prediction validation
+The second script is to compare the STSFA prediction with the microarray analysis results.
 The input is based on the csv file of the microarray data.
-The output is the microarray input for the STSFA algorithm on the Cytoscape.
+The output is a summary table of the validation results. The population of the true prediction, small errors and large errors is calculated.
 
