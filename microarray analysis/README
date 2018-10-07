@@ -1,13 +1,11 @@
 This folder includes all R scripts for the Mero-14 cell line microarray data analysis
 
-Differential expression analysis
+Differential expression analysis and Venn diagram
 The first script is to perform differntial expression analysis for the mero-14 microarray data.
 The input is a csv file containing microarray expression data for all six different samples.
 These six samples are classified into three groups: the control group, mero-14 treated by etoposide and mero-14 treatee by gemcitobine.
 The outputs are topbales which linclude the gene symbol name, log-2-fold-change, p-value for the comparison results.
-
-Venn diagram
-The scond script is to plot venn diagram to integrate the overlap of differentialy expressed  genes between the etop treated and the gem treated samples.
+The scond part of this script is to plot venn diagram to integrate the overlap of differentialy expressed  genes between the etop treated and the gem treated samples.
 The input are gene list detected up-regulated or down-regulated in the etop treated or gem treated samples.
 The output is the venn diagram ploted.
 
